@@ -53,11 +53,11 @@ img {
 }
 
 .section {
-  padding: 4rem 0;
+  padding: 3.5rem 0;
 }
 
 .section-soft {
-  padding: 4rem 0;
+  padding: 3.5rem 0;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.6),
@@ -71,7 +71,7 @@ img {
 }
 
 .section-header h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 0 0 0.7rem;
 }
 
@@ -135,57 +135,7 @@ img {
   color: var(--muted);
 }
 
-/* Nav */
-
-.primary-nav {
-  display: none;
-}
-
-.primary-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 1.4rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 0.9rem;
-}
-
-.primary-nav a {
-  position: relative;
-  padding: 0.25rem 0;
-}
-
-.primary-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #7c5cff, #35c2b3);
-  transition: width 0.18s ease-out;
-}
-
-.primary-nav a:hover::after {
-  width: 100%;
-}
-
-.nav-cta {
-  padding: 0.4rem 0.9rem;
-  border-radius: 999px;
-  border: 1px solid rgba(124, 92, 255, 0.25);
-  background: rgba(255, 255, 255, 0.85);
-  box-shadow: 0 8px 24px rgba(15, 9, 39, 0.08);
-  font-weight: 500;
-}
-
-.nav-cta:hover {
-  border-color: rgba(124, 92, 255, 0.55);
-}
-
-/* Mobile nav toggle */
+/* Mobile nav toggle – default: κινητό */
 
 .nav-toggle {
   width: 40px;
@@ -217,54 +167,80 @@ body.nav-open .nav-toggle span:last-child {
   transform: translateY(-4px) rotate(-45deg);
 }
 
-/* Mobile nav dropdown */
+/* Primary nav – mobile first: off-canvas / dropdown */
 
-@media (max-width: 767px) {
-  .primary-nav {
-    position: fixed;
-    inset: calc(var(--nav-height) + 0.5rem) 1.5rem auto;
-    border-radius: 16px;
-    background: rgba(245, 244, 251, 0.97);
-    box-shadow: var(--shadow-soft);
-    padding: 0.75rem 1rem;
-  }
-
-  .primary-nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.65rem;
-  }
-
-  .primary-nav {
-    display: none;
-  }
-
-  body.nav-open .primary-nav {
-    display: block;
-  }
+.primary-nav {
+  position: fixed;
+  inset: calc(var(--nav-height) + 0.5rem) 1.5rem auto 1.5rem;
+  border-radius: 16px;
+  background: rgba(245, 244, 251, 0.97);
+  box-shadow: var(--shadow-soft);
+  padding: 0.75rem 1rem;
+  display: none; /* hidden by default on mobile */
 }
 
-/* Desktop nav */
-
-@media (min-width: 768px) {
-  .nav-toggle {
-    display: none;
-  }
-
-  .primary-nav {
-    display: block;
-  }
+.primary-nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
 }
 
-/* Hero */
+.primary-nav a {
+  position: relative;
+  padding: 0.25rem 0;
+}
+
+.primary-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #7c5cff, #35c2b3);
+  transition: width 0.18s ease-out;
+}
+
+.primary-nav a:hover::after {
+  width: 100%;
+}
+
+/* CTA στο μενού */
+
+.nav-cta {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(124, 92, 255, 0.25);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 24px rgba(15, 9, 39, 0.08);
+  font-weight: 500;
+}
+
+.nav-cta:hover {
+  border-color: rgba(124, 92, 255, 0.55);
+}
+
+/* Όταν ανοίγει το mobile menu */
+
+body.nav-open .primary-nav {
+  display: block;
+}
+
+/* Hero – mobile first */
 
 .hero {
-  padding: 4rem 0 4.5rem;
+  padding: 3.5rem 0 4rem;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 2.5rem;
   align-items: center;
 }
@@ -291,7 +267,7 @@ body.nav-open .nav-toggle span:last-child {
 }
 
 .hero h1 {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   line-height: 1.2;
   margin: 0 0 1rem;
 }
@@ -300,6 +276,7 @@ body.nav-open .nav-toggle span:last-child {
   margin: 0 0 1.4rem;
   color: var(--muted);
   max-width: 32rem;
+  font-size: 0.95rem;
 }
 
 .hero-cta {
@@ -413,7 +390,7 @@ body.nav-open .nav-toggle span:last-child {
   z-index: 1;
 }
 
-/* Triangle itself (διακριτικό) */
+/* Διακριτικό τρίγωνο */
 
 .photo-placeholder::before {
   content: "";
@@ -427,11 +404,11 @@ body.nav-open .nav-toggle span:last-child {
   transform: translate(12px, -8px) rotate(2deg);
 }
 
-/* About */
+/* About – mobile */
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 2.4rem;
   align-items: start;
 }
@@ -440,6 +417,7 @@ body.nav-open .nav-toggle span:last-child {
   margin-top: 0;
   margin-bottom: 1rem;
   color: var(--page-fg);
+  font-size: 0.95rem;
 }
 
 .about-list {
@@ -648,7 +626,7 @@ body.nav-open .nav-toggle span:last-child {
   color: var(--muted);
 }
 
-/* Contact */
+/* Contact – mobile first */
 
 .contact {
   padding-bottom: 4.5rem;
@@ -656,7 +634,7 @@ body.nav-open .nav-toggle span:last-child {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 2.4rem;
 }
 
@@ -767,9 +745,36 @@ textarea {
   color: rgba(122, 122, 144, 0.9);
 }
 
-/* Layout: tablet & desktop */
+/* ===========================
+   Tablet & up (min-width: 768px)
+   =========================== */
 
 @media (min-width: 768px) {
+  /* Nav – γινόμαστε κλασικό οριζόντιο μενού */
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .primary-nav {
+    position: static;
+    inset: auto;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    display: block;
+  }
+
+  .primary-nav ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.4rem;
+  }
+
+  .hero {
+    padding-top: 4rem;
+  }
+
   .hero-grid {
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
     gap: 3rem;
@@ -799,7 +804,9 @@ textarea {
   }
 }
 
-/* Larger screens */
+/* ===========================
+   Desktop (min-width: 1024px)
+   =========================== */
 
 @media (min-width: 1024px) {
   .hero {
@@ -808,5 +815,13 @@ textarea {
 
   .hero h1 {
     font-size: 2.6rem;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-soft {
+    padding: 4rem 0;
   }
 }
