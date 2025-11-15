@@ -435,6 +435,15 @@ body.nav-open .primary-nav {
   color: var(--muted);
 }
 
+.primary-nav .nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 2.1rem !important;
+  white-space: nowrap;
+}
+
+
 .about-list li::before {
   content: "•";
   color: var(--accent);
