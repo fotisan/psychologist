@@ -765,6 +765,14 @@ textarea {
     padding: 0;
     display: block;
   }
+    .primary-nav .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.45rem 2rem !important;
+    white-space: nowrap;
+  }
+
 
   .primary-nav ul {
     flex-direction: row;
