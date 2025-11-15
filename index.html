@@ -2,24 +2,23 @@
 <html lang="el">
 <head>
   <meta charset="utf-8" />
-  <title>Evida Studio — Websites που φέρνουν ραντεβού</title>
+  <title>Evida Studio — Webflow sites που φέρνουν πελάτες</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css">
 </head>
-<body id="top">
-  <!-- HEADER -->
+<body>
   <header class="site-header">
     <div class="site-header-inner">
       <div class="site-logo">
         <a href="#top">Evida <span>Studio</span></a>
       </div>
 
-      <button class="nav-toggle" type="button" aria-label="Άνοιγμα μενού">
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation">
         <span class="nav-toggle-line"></span>
         <span class="nav-toggle-line"></span>
       </button>
 
-      <nav class="nav-links" aria-label="Κύρια πλοήγηση">
+      <nav class="nav-links">
         <a href="#portfolio">Portfolio</a>
         <a href="#about">About</a>
         <a href="#services">Υπηρεσίες</a>
@@ -31,330 +30,320 @@
 
   <main class="shell">
     <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="hero-eyebrow">DESIGN FOR SERVICE PROFESSIONALS</p>
-
-        <h1 class="hero-title" id="hero-title">
-          Websites που <em>φέρνουν ραντεβού</em>, όχι απλά επισκέψεις.
+    <section class="hero" id="top">
+      <div class="hero-copy reveal-frame">
+        <div class="hero-eyebrow reveal-content">WEBFLOW DESIGNER FOR SERVICE PROS</div>
+        <h1 class="hero-title reveal-content">
+          Websites που <em>φέρνουν πελάτες</em> για Ψυχολόγους, Trainers,
+          Δικηγόρους &amp; Real Estate.
         </h1>
-
-        <p class="hero-sub">
-          Βοηθάω ψυχολόγους, trainers, δικηγόρους &amp; real estate pros να έχουν
-          καθαρό, σύγχρονο site που οδηγεί τον επισκέπτη στο επόμενο βήμα: μήνυμα, κλήση ή ραντεβού.
+        <p class="hero-sub reveal-content">
+          Done-for-you Webflow sites που είναι φτιαγμένα για να κλείνουν ραντεβού
+          — όχι απλώς για να είναι “όμορφα”.
         </p>
-
-        <div class="hero-meta">
-          <span>Conversion-first δομή</span>
-          <span>Mobile-first εμπειρία</span>
-          <span>Απλή διαχείριση</span>
+        <div class="hero-meta reveal-content">
+          <span>Built in Webflow</span>
+          <span>On-page SEO</span>
+          <span>24h πρόταση</span>
           <span>2 εβδομάδες παράδοση</span>
         </div>
-
         <div class="hero-cta-row">
-          <a href="#contact" class="btn-primary">Ζήτησε προσφορά</a>
-          <a href="#portfolio" class="btn-outline">Δες δουλειές</a>
-        </div>
-
-        <div class="hero-tags-row">
-          <div class="hero-tags">
-            <span class="hero-tag">Psychologists</span>
-            <span class="hero-tag">Personal Trainers</span>
-            <span class="hero-tag">Lawyers</span>
-            <span class="hero-tag">Real Estate</span>
-          </div>
+          <a href="#contact" class="btn-primary reveal-content">Ζήτησε προσφορά</a>
+          <a href="#portfolio" class="btn-outline reveal-content">Δες δουλειές</a>
         </div>
       </div>
 
-      <!-- 3D STATS PANEL -->
-      <aside class="hero-visual" aria-label="Στατιστικά απόδοσης site">
-        <div class="hero-panel hero-panel--stats">
-          <div class="hero-panel-header">
+      <!-- 3D HERO PANEL -->
+      <aside class="hero-visual reveal-frame">
+        <div class="hero-panel">
+          <div class="hero-panel-header reveal-content">
             Client Growth Snapshot
           </div>
 
-          <div class="hero-panel-main hero-panel-main--stats">
-            <!-- Mini chart -->
-            <div class="hero-chart">
-              <div class="hero-chart-line"></div>
-              <div class="hero-chart-points">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="hero-chart-labels">
-                <span>Launch</span>
-                <span>Week 2</span>
-                <span>Week 4</span>
+          <div class="hero-panel-main">
+            <!-- Left: chart -->
+            <div class="hero-panel-chart reveal-content">
+              <div class="hero-panel-chart-pill"></div>
+
+              <div class="hero-panel-chart-inner">
+                <div class="hero-panel-chart-points">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="hero-panel-chart-labels">
+                  <span>Launch</span>
+                  <span>Week 2</span>
+                  <span>Week 4</span>
+                </div>
               </div>
             </div>
 
-            <!-- Stats -->
-            <div class="hero-stats">
-              <div class="hero-stat">
-                <div class="hero-stat-label">Booked calls</div>
-                <div class="hero-stat-value hero-stat-value--green">+3×</div>
-                <div class="hero-stat-note">μετά το νέο site</div>
+            <!-- Right: stats -->
+            <div class="hero-panel-stats">
+              <div class="hero-panel-stat reveal-content">
+                <div class="hero-panel-stat-label">Booked calls</div>
+                <div class="hero-panel-stat-value hero-panel-stat-value--green">+3×</div>
+                <div class="hero-panel-stat-note">μετά το νέο site</div>
               </div>
 
-              <div class="hero-stat">
-                <div class="hero-stat-label">Mobile enquiries</div>
-                <div class="hero-stat-value">+46%</div>
-                <div class="hero-stat-note">από κινητό</div>
+              <div class="hero-panel-stat reveal-content">
+                <div class="hero-panel-stat-label">Mobile enquiries</div>
+                <div class="hero-panel-stat-value">+46%</div>
+                <div class="hero-panel-stat-note">από κινητό</div>
               </div>
 
-              <div class="hero-stat">
-                <div class="hero-stat-label">Lost traffic</div>
-                <div class="hero-stat-value hero-stat-value--red">−38%</div>
-                <div class="hero-stat-note">λιγότεροι επισκέπτες που φεύγουν</div>
+              <div class="hero-panel-stat reveal-content">
+                <div class="hero-panel-stat-label">Lost traffic</div>
+                <div class="hero-panel-stat-value hero-panel-stat-value--red">−38%</div>
+                <div class="hero-panel-stat-note">λιγότεροι επισκέπτες που φεύγουν</div>
               </div>
             </div>
           </div>
 
-          <div class="hero-panel-footer hero-panel-footer--stats">
-            <div class="hero-pill">Designed for service professionals</div>
-            <div class="hero-pill hero-pill-soft">
-              Typical results from modern service websites
-            </div>
+          <div class="hero-panel-footer reveal-content">
+            <div class="hero-pill">+3x περισσότερα ραντεβού</div>
+            <div class="hero-pill hero-pill-soft">2-week average build</div>
           </div>
         </div>
       </aside>
-    </section>
 
-    <!-- PORTFOLIO -->
-    <section class="section" id="portfolio" aria-labelledby="portfolio-title">
-      <h2 id="portfolio-title">Portfolio</h2>
-      <p class="section-lead">
-        Παραδείγματα layouts για ψυχολόγους, ιατρούς, δικηγόρους, personal trainers &amp; real estate.
-        Επικεντρώνομαι σε καθαρές δομές που κλείνουν ραντεβού.
-      </p>
-
-      <div class="pf-grid">
-        <article class="pf-item">
-          <img src="mock-psych-1.png" alt="Mockup site για ψυχολόγο">
-          <div class="pf-info">
-            <h3>Psychologist</h3>
-            <p>Ήρεμο, ζεστό layout με ξεκάθαρο path προς “Κλείσε ραντεβού”.</p>
-          </div>
-        </article>
-
-        <article class="pf-item">
-          <img src="mock-derma-1.png" alt="Mockup site για δερματολογική κλινική">
-          <div class="pf-info">
-            <h3>Dermatology Clinic</h3>
-            <p>Καθαρό medical look με έμφαση σε υπηρεσίες και αποτελέσματα.</p>
-          </div>
-        </article>
-
-        <article class="pf-item">
-          <img src="mock-law-1.png" alt="Mockup site για δικηγορικό γραφείο">
-          <div class="pf-info">
-            <h3>Law Firm</h3>
-            <p>Σοβαρό, δομημένο layout με ξεκάθαρα practice areas.</p>
-          </div>
-        </article>
-
-        <article class="pf-item">
-          <img src="mock-villa-1.png" alt="Mockup site για real estate / villa">
-          <div class="pf-info">
-            <h3>Real Estate / Villa</h3>
-            <p>Premium παρουσίαση ακινήτων με σαφείς φόρμες επικοινωνίας.</p>
-          </div>
-        </article>
+      <!-- TAGS -->
+      <div class="hero-tags-row reveal-frame">
+        <div class="hero-tags reveal-content">
+          <span class="hero-tag">Psychologists</span>
+          <span class="hero-tag">Personal Trainers</span>
+          <span class="hero-tag">Lawyers</span>
+          <span class="hero-tag">Real Estate</span>
+        </div>
       </div>
     </section>
 
-    <!-- DESIGN COMPARISON -->
-    <section class="section section-compare" id="design-compare" aria-labelledby="compare-title">
-      <h2 id="compare-title">Wrong vs Right layout</h2>
-      <p class="section-lead">
-        Το ίδιο περιεχόμενο μπορεί να δουλεύει υπέρ σου ή εναντίον σου.  
-        Η διαφορά είναι στο layout, στα μηνύματα και στο πόσο εύκολα οδηγείς τον επισκέπτη σε δράση.
+    <!-- PORTFOLIO -->
+    <section class="section reveal-frame" id="portfolio">
+      <h2 class="reveal-content">Portfolio</h2>
+      <p class="section-lead reveal-content">
+        Websites για ψυχολόγους, γιατρούς, δικηγόρους, personal trainers &amp; real estate — 
+        φτιαγμένα για να φέρνουν πελάτες.
+      </p>
+
+      <div class="pf-grid">
+        <div class="pf-item reveal-frame">
+          <img src="mock-psych-1.png" alt="Psychologist website mockup" class="reveal-content">
+          <div class="pf-info reveal-content">
+            <h3>Psychologist</h3>
+            <p>Warm &amp; calm layout για υψηλότερα booked sessions.</p>
+          </div>
+        </div>
+
+        <div class="pf-item reveal-frame">
+          <img src="mock-derma-1.png" alt="Dermatology website mockup" class="reveal-content">
+          <div class="pf-info reveal-content">
+            <h3>Dermatology Clinic</h3>
+            <p>Premium medical look με clean hierarchy.</p>
+          </div>
+        </div>
+
+        <div class="pf-item reveal-frame">
+          <img src="mock-law-1.png" alt="Law firm website mockup" class="reveal-content">
+          <div class="pf-info reveal-content">
+            <h3>Law Firm</h3>
+            <p>Serious, trustworthy design με emphasis σε practice areas.</p>
+          </div>
+        </div>
+
+        <div class="pf-item reveal-frame">
+          <img src="mock-villa-1.png" alt="Real estate / villa website mockup" class="reveal-content">
+          <div class="pf-info reveal-content">
+            <h3>Real Estate / Villa</h3>
+            <p>High-end listings και σαφές lead form.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN BEFORE / AFTER -->
+    <section class="section section-compare reveal-frame" id="design-compare">
+      <h2 class="reveal-content">Wrong vs Right design</h2>
+      <p class="section-lead reveal-content">
+        Το ίδιο περιεχόμενο μπορεί να δουλεύει ή να σε σαμποτάρει, ανάλογα με το layout.
+        Δες ένα απλό παράδειγμα πριν/μετά.
       </p>
 
       <div class="compare-grid">
-        <article class="compare-card compare-card--wrong">
-          <div class="compare-header">
+        <article class="compare-card compare-card--wrong reveal-frame">
+          <div class="compare-header reveal-content">
             <span class="compare-label compare-label--wrong">Λάθος layout</span>
-            <p class="compare-note">
-              Πολλά στοιχεία, αδύναμα CTA, χωρίς ξεκάθαρο “επόμενο βήμα”.
-            </p>
+            <span class="compare-note">Χαμένο focus, αδύναμα CTA, visual θόρυβος.</span>
           </div>
-          <div class="compare-image-wrap">
-            <img src="wrong-mock.jpg" alt="Παράδειγμα λάθους layout">
+          <div class="compare-image-wrap reveal-content">
+            <img src="wrong-mock.jpg" alt="Παράδειγμα λάθους layout website">
           </div>
         </article>
 
-        <article class="compare-card compare-card--right">
-          <div class="compare-header">
+        <article class="compare-card compare-card--right reveal-frame">
+          <div class="compare-header reveal-content">
             <span class="compare-label compare-label--right">Σωστό layout</span>
-            <p class="compare-note">
-              Καθαρή ιεραρχία, ένα βασικό μήνυμα, ένα κύριο CTA σε κάθε σελίδα.
-            </p>
+            <span class="compare-note">Καθαρή ιεραρχία, ξεκάθαρο μήνυμα, ένα κύριο CTA.</span>
           </div>
-          <div class="compare-image-wrap">
-            <img src="wright-mock.jpg" alt="Παράδειγμα σωστού layout">
+          <div class="compare-image-wrap reveal-content">
+            <img src="wright-mock.jpg" alt="Παράδειγμα σωστού layout website">
           </div>
         </article>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="section" id="about" aria-labelledby="about-title">
-      <h2 id="about-title">Who you'll work with</h2>
-      <p class="section-lead">
-        Γεια, είμαι ο Fotis. Δουλεύω με επαγγελματίες υπηρεσιών που θέλουν ένα site
-        που να βγάζει νόημα για τον πελάτη τους — όχι απλά “να είναι όμορφο”.
+    <section class="section reveal-frame" id="about">
+      <h2 class="reveal-content">Who you'll work with</h2>
+      <p class="section-lead reveal-content">
+        Γεια, είμαι ο Fotis — Webflow designer για ανθρώπους που πουλάνε υπηρεσίες.
       </p>
 
       <div class="about-grid">
-        <figure class="about-photo">
+        <figure class="about-photo reveal-frame">
           <div class="about-photo-ring"></div>
-          <img src="fotis-hero.png" alt="Fotis, designer για επαγγελματίες υπηρεσιών">
+          <img src="fotis-hero.png" alt="Fotis, Webflow designer" class="reveal-content">
         </figure>
 
-        <div class="about-card">
-          <p>
-            Έχω background στο business &amp; marketing και βοηθάω επαγγελματίες
-            όπως ψυχολόγους, trainers, δικηγόρους &amp; real estate owners να
-            βάλουν τάξη στο μήνυμα και στη δομή του site τους.
+        <div class="about-card reveal-frame">
+          <p class="reveal-content">
+            Έχω background στο business &amp; marketing και χτίζω sites για
+            επαγγελματίες που θέλουν λιγότερο “όμορφο brochure” και περισσότερο
+            μηχανή που κλείνει ραντεβού.
           </p>
-          <ul>
-            <li>Εστιάζω στο τι χρειάζεται να δει/ακούσει ο ιδανικός σου πελάτης.</li>
-            <li>Δουλεύω mobile-first, με έμφαση σε καθαρά CTA.</li>
-            <li>Παραδίδω site που μπορείς να συντηρείς χωρίς πονοκέφαλο.</li>
+          <ul class="reveal-content">
+            <li>Εστιάζω σε ψυχολόγους, trainers, δικηγόρους &amp; real estate.</li>
+            <li>Δουλεύω με Webflow, καθαρό layout και ξεκάθαρα CTA.</li>
+            <li>Στόχος: ο ιδανικός πελάτης σου να πει “οκ, αυτός/αυτή είναι για μένα”.</li>
           </ul>
         </div>
       </div>
     </section>
 
     <!-- SERVICES -->
-    <section class="section" id="services" aria-labelledby="services-title">
-      <h2 id="services-title">Τι αναλαμβάνω για σένα</h2>
-      <p class="section-lead">
-        Σκεφτόμαστε πρώτα τη ροή του πελάτη σου και μετά όλα τα υπόλοιπα:
-        χρώματα, φωτογραφίες και εφέ έρχονται για να στηρίξουν το μήνυμα, όχι να το κρύψουν.
+    <section class="section reveal-frame" id="services">
+      <h2 class="reveal-content">Τι αναλαμβάνω για σένα</h2>
+      <p class="section-lead reveal-content">
+        Δεν σου “φτιάχνω απλά ένα site”. Στήνουμε ένα μικρό σύστημα που φέρνει
+        ιδανικούς πελάτες, από την πρώτη επίσκεψη μέχρι το booked call.
       </p>
-
       <div class="cards">
-        <article class="card">
-          <h3>Strategy &amp; positioning</h3>
-          <p>Τι πουλάς, σε ποιον, γιατί να σε επιλέξει και ποιο είναι το βασικό σου μήνυμα.</p>
-        </article>
-
-        <article class="card">
-          <h3>UX &amp; δομή σελίδων</h3>
-          <p>Ποια ενότητα πάει πού, πώς απαντάς στις αντιρρήσεις και πού οδηγείς τον επισκέπτη.</p>
-        </article>
-
-        <article class="card">
-          <h3>Visual design</h3>
-          <p>
-            Καθαρή, σύγχρονη αισθητική που δείχνει επαγγελματισμό
-            και κάνει το brand σου να φαίνεται “μαζεμένο” και ξεκάθαρο.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Launch &amp; υποστήριξη</h3>
-          <p>
-            Στήσιμο domain, βασικά analytics και μικρό video handover
-            για να νιώθεις ότι έχεις τον έλεγχο.
-          </p>
-        </article>
+        <div class="card reveal-frame">
+          <h3 class="reveal-content">Strategy</h3>
+          <p class="reveal-content">Positioning, ιδανικός πελάτης, πακέτα &amp; κεντρικό μήνυμα.</p>
+        </div>
+        <div class="card reveal-frame">
+          <h3 class="reveal-content">UX &amp; Copy</h3>
+          <p class="reveal-content">Δομή &amp; κείμενα που απαντούν στις αντιρρήσεις και οδηγούν στο CTA.</p>
+        </div>
+        <div class="card reveal-frame">
+          <h3 class="reveal-content">Webflow Build</h3>
+          <p class="reveal-content">Καθαρή υλοποίηση, mobile-first, εύκολη διαχείριση.</p>
+        </div>
+        <div class="card reveal-frame">
+          <h3 class="reveal-content">Launch &amp; μετά</h3>
+          <p class="reveal-content">Domain, SEO basics, analytics &amp; handover video.</p>
+        </div>
       </div>
     </section>
 
     <!-- PROCESS -->
-    <section class="section" id="process" aria-labelledby="process-title">
-      <h2 id="process-title">Process 4 βημάτων</h2>
-      <p class="section-lead">
-        Θέλω η διαδικασία να είναι ξεκάθαρη από την αρχή, χωρίς εκπλήξεις.
+    <section class="section reveal-frame" id="process">
+      <h2 class="reveal-content">Process 4 βημάτων</h2>
+      <p class="section-lead reveal-content">
+        Από το πρώτο call μέχρι το launch, σε 4 καθαρά βήματα.
       </p>
-
       <div class="process-steps">
-        <div class="step step--open">
+        <div class="step step--open reveal-frame">
           <button class="step-toggle" type="button">
-            <span class="step-title-text">01 • Brief &amp; στόχοι (30’ call)</span>
+            <span class="step-title-text reveal-content">01 • Brief &amp; στόχοι — 30’ call</span>
             <span class="step-arrow" aria-hidden="true"></span>
           </button>
-          <div class="step-body">
-            Μιλάμε για το πώς δουλεύεις, ποιος είναι ο ιδανικός σου πελάτης
-            και τι σημαίνει “επιτυχία” για σένα τους επόμενους 6–12 μήνες.
+          <div class="step-body reveal-content">
+            Καταλαβαίνω πώς δουλεύεις ήδη, τι πουλάς και τι σημαίνει “επιτυχία” για σένα.
           </div>
         </div>
 
-        <div class="step">
+        <div class="step reveal-frame">
           <button class="step-toggle" type="button">
-            <span class="step-title-text">02 • Δομή &amp; κείμενα</span>
+            <span class="step-title-text reveal-content">02 • Wireframe &amp; ροή σελίδων</span>
             <span class="step-arrow" aria-hidden="true"></span>
           </button>
-          <div class="step-body">
-            Φτιάχνουμε τη ροή του site και τα βασικά κείμενα.
-            Επικεντρωνόμαστε στο τι χρειάζεται να καταλάβει ο πελάτης στην 1η επίσκεψη.
+          <div class="step-body reveal-content">
+            Φτιάχνουμε “σκελετό” πριν από τα χρώματα, για να είμαστε σίγουροι για τη ροή.
           </div>
         </div>
 
-        <div class="step">
+        <div class="step reveal-frame">
           <button class="step-toggle" type="button">
-            <span class="step-title-text">03 • Design &amp; υλοποίηση</span>
+            <span class="step-title-text reveal-content">03 • Design &amp; Webflow build</span>
             <span class="step-arrow" aria-hidden="true"></span>
           </button>
-          <div class="step-body">
-            Χτίζω το site με καθαρό, γρήγορο layout, optimized για κινητό
-            και με προσοχή στα CTA και στη φόρμα επικοινωνίας.
+          <div class="step-body reveal-content">
+            Χτίζω το site σε Webflow, με καθαρό layout, mobile εμπειρία και premium αίσθηση.
           </div>
         </div>
 
-        <div class="step">
+        <div class="step reveal-frame">
           <button class="step-toggle" type="button">
-            <span class="step-title-text">04 • Launch &amp; fine-tuning</span>
+            <span class="step-title-text reveal-content">04 • Launch, SEO basics &amp; handover</span>
             <span class="step-arrow" aria-hidden="true"></span>
           </button>
-          <div class="step-body">
-            Συνδέουμε domain, ενεργοποιούμε βασικά analytics
-            και κάνουμε τις τελευταίες μικρές διορθώσεις με βάση το feedback σου.
+          <div class="step-body reveal-content">
+            Συνδέουμε domain, φόρμες, tracking και σου αφήνω video για να νιώθεις ότι το έχεις.
           </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Έλα να το ξεκινήσουμε</h2>
-      <p class="section-lead">
-        Στείλε 2–3 site που σου αρέσουν + μερικές λέξεις για το τι θες να πετύχεις.
-        Θα λάβεις καθαρή, συγκεκριμένη πρόταση μέσα σε 24 ώρες.
+    <section class="section reveal-frame" id="contact">
+      <h2 class="reveal-content">Έλα να το ξεκινήσουμε</h2>
+      <p class="section-lead reveal-content">
+        Στείλε 2–3 site που σου αρέσουν + τον στόχο σου.
+        Θα λάβεις αναλυτική πρόταση σε 24 ώρες.
       </p>
-
-      <a href="mailto:youremail@example.com" class="btn-primary">
-        Στείλε μου email
+      <a href="mailto:your@email"
+         class="btn-primary reveal-frame">
+         <span class="reveal-content">Στείλε μου email</span>
       </a>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© Evida Studio. All rights reserved.</p>
+  <footer>
+    © Evida Studio. All rights reserved.
   </footer>
 
-  <!-- Scroll to top -->
-  <button class="scroll-top" id="scrollTopBtn" aria-label="Επιστροφή στην κορυφή">
+  <!-- Scroll to top button -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Back to top">
     ↑
   </button>
 
+  <!-- JS -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      // Accordion
+      const steps = document.querySelectorAll('.step');
+      steps.forEach(step => {
+        const toggle = step.querySelector('.step-toggle');
+        if (!toggle) return;
+        toggle.addEventListener('click', () => {
+          const isOpen = step.classList.contains('step--open');
+          steps.forEach(s => s.classList.remove('step--open'));
+          if (!isOpen) step.classList.add('step--open');
+        });
+      });
+
       // Mobile nav
       const navToggle = document.querySelector('.nav-toggle');
       const navLinks = document.querySelector('.nav-links');
-
       if (navToggle && navLinks) {
         navToggle.addEventListener('click', () => {
           navLinks.classList.toggle('is-open');
           navToggle.classList.toggle('is-active');
         });
-
         navLinks.querySelectorAll('a').forEach(link => {
           link.addEventListener('click', () => {
             navLinks.classList.remove('is-open');
@@ -363,37 +352,63 @@
         });
       }
 
-      // Accordion process
-      const steps = document.querySelectorAll('.step');
-      steps.forEach(step => {
-        const toggle = step.querySelector('.step-toggle');
-        if (!toggle) return;
-
-        toggle.addEventListener('click', () => {
-          const isOpen = step.classList.contains('step--open');
-          steps.forEach(s => s.classList.remove('step--open'));
-          if (!isOpen) step.classList.add('step--open');
-        });
-      });
-
-      // Scroll to top button
+      // Scroll-to-top
       const scrollBtn = document.getElementById('scrollTopBtn');
-      function updateScrollBtn() {
-        if (!scrollBtn) return;
-        if (window.scrollY > 160) {
-          scrollBtn.classList.add('is-visible');
-        } else {
-          scrollBtn.classList.remove('is-visible');
-        }
-      }
-
-      window.addEventListener('scroll', updateScrollBtn);
-      window.addEventListener('resize', updateScrollBtn);
-      updateScrollBtn();
+      const secondSection = document.querySelector('#portfolio');
 
       if (scrollBtn) {
+        const updateScrollBtn = () => {
+          const isMobile = window.matchMedia('(max-width: 767px)').matches;
+          if (isMobile) {
+            if (window.scrollY > 80) {
+              scrollBtn.classList.add('is-visible');
+            } else {
+              scrollBtn.classList.remove('is-visible');
+            }
+          } else if (secondSection) {
+            const rect = secondSection.getBoundingClientRect();
+            const sectionMidFromDocTop = rect.top + window.scrollY + rect.height / 2;
+            if (window.scrollY >= sectionMidFromDocTop - window.innerHeight / 2) {
+              scrollBtn.classList.add('is-visible');
+            } else {
+              scrollBtn.classList.remove('is-visible');
+            }
+          }
+        };
+
+        window.addEventListener('scroll', updateScrollBtn);
+        window.addEventListener('resize', updateScrollBtn);
+        updateScrollBtn();
+
         scrollBtn.addEventListener('click', () => {
           window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      // Scroll reveal (καμία καθυστέρηση)
+      const revealEls = document.querySelectorAll('.reveal-frame, .reveal-content');
+
+      if (revealEls.length) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+
+        revealEls.forEach((el, index) => {
+          const baseDelay = 0;
+          const extraContentDelay = 0;
+
+          if (el.classList.contains('reveal-content')) {
+            el.style.transitionDelay = (baseDelay + extraContentDelay) + 'ms';
+          } else {
+            el.style.transitionDelay = baseDelay + 'ms';
+          }
+
+          observer.observe(el);
         });
       }
     });
