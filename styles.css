@@ -214,7 +214,7 @@ body.nav-open .nav-toggle span:last-child {
 /* CTA στο μενού */
 
 .nav-cta {
-  padding: 0.4rem 0.9rem;
+  padding: 0.4rem 5.9rem;
   border-radius: 999px;
   border: 1px solid rgba(124, 92, 255, 0.25);
   background: rgba(255, 255, 255, 0.85);
