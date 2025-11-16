@@ -836,3 +836,26 @@ textarea {
     padding: 4rem 0;
   }
 }
+/* --- Override για το "Κλείσε συνεδρία" στο navbar --- */
+
+/* desktop & mobile: τελευταίο link του primary-nav */
+.primary-nav li:last-child a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 1.6rem;       /* άνετο δεξιά–αριστερά */
+  border-radius: 999px;
+  border: 1px solid rgba(124, 92, 255, 0.25);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 24px rgba(15, 9, 39, 0.08);
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1;
+  white-space: nowrap;           /* δεν σπάει σε 2η γραμμή */
+}
+
+/* να μην φαίνεται η γραμμή underline hover στο CTA */
+.primary-nav li:last-child a::after {
+  display: none;
+}
+
