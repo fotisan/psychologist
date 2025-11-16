@@ -213,20 +213,26 @@ body.nav-open .nav-toggle span:last-child {
 
 /* CTA στο μενού – αλλαγμένο */
 
+/* CTA στο μενού */
 .nav-cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.45rem 1.25rem; /* περισσότερη ανάσα στα πλάγια */
+  padding: 0.5rem 1.4rem;          /* περισσότερη ανάσα στα πλάγια */
   border-radius: 999px;
   border: 1px solid rgba(124, 92, 255, 0.25);
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 8px 24px rgba(15, 9, 39, 0.08);
   font-size: 0.9rem;
   font-weight: 500;
-  line-height: 1;
-  white-space: nowrap; /* δεν σπάει σε 2 γραμμές */
+  line-height: 1;                  /* σφιχτό, χωρίς έξτρα ύψος */
+  white-space: nowrap;             /* δεν σπάει σε 2η γραμμή */
 }
+
+.nav-cta:hover {
+  border-color: rgba(124, 92, 255, 0.55);
+}
+
 
 .nav-cta:hover {
   border-color: rgba(124, 92, 255, 0.55);
