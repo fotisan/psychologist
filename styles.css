@@ -878,4 +878,26 @@ textarea {
     display: none !important;
   }
 }
+/* ===== ΤΕΛΙΚΟ DESKTOP OVERRIDE ΓΙΑ "Κλείσε συνεδρία" ===== */
+@media (min-width: 768px) {
+  .primary-nav ul li:last-child a,
+  .primary-nav ul li:last-child a.nav-cta {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.5rem 1.7rem !important;   /* αναπνοή στα πλάγια */
+    border-radius: 999px !important;
+    border: 1px solid rgba(124, 92, 255, 0.25) !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 8px 24px rgba(15, 9, 39, 0.08) !important;
+    white-space: nowrap !important;      /* καμία 2η γραμμή */
+    line-height: 1 !important;
+    font-weight: 500;
+  }
+
+  .primary-nav ul li:last-child a::after,
+  .primary-nav ul li:last-child a.nav-cta::after {
+    display: none !important;            /* σβήνουμε το underline effect */
+  }
+}
 
