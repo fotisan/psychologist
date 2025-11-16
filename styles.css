@@ -211,6 +211,21 @@ body.nav-open .nav-toggle span:last-child {
   width: 100%;
 }
 
+/* CTA στο μενού */
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 1.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(124, 92, 255, 0.25);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 24px rgba(15, 9, 39, 0.08);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 .nav-cta:hover {
   border-color: rgba(124, 92, 255, 0.55);
 }
