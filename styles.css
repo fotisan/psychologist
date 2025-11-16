@@ -858,4 +858,24 @@ textarea {
 .primary-nav li:last-child a::after {
   display: none;
 }
+/* --- DESKTOP OVERRIDE ΓΙΑ ΤΟ CTA --- */
+@media (min-width: 768px) {
+
+  .primary-nav ul > li:last-of-type > a {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.8rem !important;
+    border-radius: 999px;
+    border: 1px solid rgba(124, 92, 255, 0.25);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 24px rgba(15, 9, 39, 0.08);
+    white-space: nowrap !important;
+    line-height: 1;
+  }
+
+  .primary-nav ul > li:last-of-type > a::after {
+    display: none !important;
+  }
+}
 
