@@ -211,17 +211,21 @@ body.nav-open .nav-toggle span:last-child {
   width: 100%;
 }
 
-/* CTA στο μενού */
+/* CTA στο μενού – αλλαγμένο */
 
 .nav-cta {
-  padding: 0.5rem 1.3rem;              /* πιο φαρδύ πλαίσιο */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 1.25rem; /* περισσότερη ανάσα στα πλάγια */
   border-radius: 999px;
   border: 1px solid rgba(124, 92, 255, 0.25);
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 8px 24px rgba(15, 9, 39, 0.08);
+  font-size: 0.9rem;
   font-weight: 500;
-  line-height: 1.1;                     /* σφιχτό, αλλά άνετο κάθετα */
-  white-space: nowrap;                  /* κρατάει "Κλείσε συνεδρία" σε μία γραμμή */
+  line-height: 1;
+  white-space: nowrap; /* δεν σπάει σε 2 γραμμές */
 }
 
 .nav-cta:hover {
@@ -771,11 +775,6 @@ textarea {
     flex-direction: row;
     align-items: center;
     gap: 1.6rem;
-  }
-
-  /* λίγο παραπάνω “ανάσα” στο CTA στο desktop */
-  .nav-cta {
-    padding-inline: 1.5rem;
   }
 
   .hero {
