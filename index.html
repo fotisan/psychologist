@@ -517,21 +517,53 @@
   </footer>
 
   <script>
-    // Mobile nav toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const body = document.body;
+    <script>
+  // Mobile nav toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const body = document.body;
+  const nav = document.querySelector('.primary-nav');
 
-    if (navToggle) {
-      navToggle.addEventListener('click', () => {
-        body.classList.toggle('nav-open');
-      });
-    }
+  if (navToggle) {
+    navToggle.addEventListener('click', (e) => {
+      e.stopPropagation(); // να μην "φύγει" το κλικ προς τα έξω
+      body.classList.toggle('nav-open');
+    });
+  }
 
-    // Current year in footer
-    const yearSpan = document.getElementById('year');
-    if (yearSpan) {
-      yearSpan.textContent = new Date().getFullYear();
+  // Κλείσιμο όταν κάνεις κλικ σε link μέσα στο menu
+  if (nav) {
+    nav.addEventListener('click', (e) => {
+      const target = e.target;
+      if (target.tagName === 'A') {
+        body.classList.remove('nav-open');
+      }
+    });
+  }
+
+  // Κλείσιμο όταν κάνεις κλικ ΟΠΟΥΔΗΠΟΤΕ εκτός nav / hamburger
+  document.addEventListener('click', (e) => {
+    if (!body.classList.contains('nav-open')) return;
+
+    const clickInsideNav = nav && nav.contains(e.target);
+    const clickOnToggle = navToggle && navToggle.contains(e.target);
+
+    if (!clickInsideNav && !clickOnToggle) {
+      body.classList.remove('nav-open');
     }
-  </script>
+  });
+
+  // Κλείσιμο με Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && body.classList.contains('nav-open')) {
+      body.classList.remove('nav-open');
+    }
+  });
+
+  // Current year in footer
+  const yearSpan = document.getElementById('year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+</script>
 </body>
 </html>
