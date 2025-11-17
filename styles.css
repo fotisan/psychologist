@@ -467,6 +467,12 @@ body.nav-open .primary-nav {
   color: #3b3858;
 }
 
+/* Στο "Σχετικά με εμένα" κρύβουμε το πάνω placeholder
+   ώστε το γκρι πλαίσιο να ευθυγραμμιστεί με το αριστερό */
+.about-media .photo-placeholder {
+  display: none;
+}
+
 /* Cards */
 
 .cards-grid {
