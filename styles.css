@@ -373,33 +373,26 @@ body.nav-open .primary-nav {
 
 .photo-placeholder {
   position: relative;
-  border-radius: 30px;          /* πιο στρογγυλεμένες γωνίες */
-  border: none;                 /* βγάζει το διακεκομμένο πλαίσιο */
+  border-radius: 30px;
+  border: none;
   background: radial-gradient(circle at top left, #ffffff, #f3f1ff);
   padding: 0;
   overflow: hidden;
-  min-height: 160px;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
+  /* αφήνουμε το ύψος να το ορίσει η ίδια η εικόνα */
+  min-height: 0;
+  display: block;
 }
 
 .photo-large {
-  min-height: 260px;
-}
-
-.photo-small {
-  min-height: 150px;
-}
-
-.photo-tiny {
-  min-height: 100px;
+  /* αν θες λίγο μίνιμουμ ύψος για άλλα placeholders μπορείς να βάλεις π.χ. */
+  /* min-height: 220px; */
 }
 
 .photo-placeholder img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;     /* ΠΡΟΣΟΧΗ: όχι 100% */
+  display: block;
+  object-fit: cover; /* μπορεί και να φύγει, αλλά δεν πειράζει εδώ */
 }
 
 .photo-label {
