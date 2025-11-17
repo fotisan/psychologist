@@ -841,3 +841,11 @@ textarea {
     padding: 4rem 0;
   }
 }
+
+/* About section – ευθυγράμμιση quote με το κείμενο στο desktop */
+@media (min-width: 768px) {
+  #about .about-media .photo-placeholder {
+    display: none;
+  }
+}
+
