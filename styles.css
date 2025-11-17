@@ -373,8 +373,8 @@ body.nav-open .primary-nav {
 
 .photo-placeholder {
   position: relative;
-  border-radius: var(--radius-lg);
-  border: 1px dashed rgba(19, 18, 26, 0.16);
+  border-radius: 30px;          /* πιο στρογγυλεμένες γωνίες */
+  border: none;                 /* βγάζει το διακεκομμένο πλαίσιο */
   background: radial-gradient(circle at top left, #ffffff, #f3f1ff);
   padding: 0;
   overflow: hidden;
