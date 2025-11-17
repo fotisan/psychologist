@@ -371,6 +371,8 @@ body.nav-open .primary-nav {
 
 /* Photo placeholders */
 
+/* Photo placeholders */
+
 .photo-placeholder {
   position: relative;
   border-radius: 30px;
@@ -378,21 +380,29 @@ body.nav-open .primary-nav {
   background: radial-gradient(circle at top left, #ffffff, #f3f1ff);
   padding: 0;
   overflow: hidden;
-  /* αφήνουμε το ύψος να το ορίσει η ίδια η εικόνα */
-  min-height: 0;
   display: block;
 }
 
+/* hero φωτογραφία – σταθερή αναλογία 4:3 για όλες τις συσκευές */
 .photo-large {
-  /* αν θες λίγο μίνιμουμ ύψος για άλλα placeholders μπορείς να βάλεις π.χ. */
-  /* min-height: 220px; */
+  aspect-ratio: 4 / 3;
 }
 
 .photo-placeholder img {
   width: 100%;
-  height: auto;     /* ΠΡΟΣΟΧΗ: όχι 100% */
+  height: 100%;
   display: block;
-  object-fit: cover; /* μπορεί και να φύγει, αλλά δεν πειράζει εδώ */
+  object-fit: cover;
+  object-position: center top; /* να μην “κόβει” περίεργα το κάτω μέρος */
+}
+
+.photo-label {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-size: 0.72rem;
+  color: var(--muted);
+  z-index: 1;
 }
 
 .photo-label {
