@@ -8,6 +8,19 @@
     name="description"
     content="Online therapy for anxiety, stress, and burnout for adults in their mid-20s to late-30s. Calm, evidence-based support from a US-based psychologist."
   />
+
+  <!-- Google Fonts για logo / headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Favicon (φτιάξε ένα favicon.svg ή favicon.png στον φάκελο του σάιτ σου) -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="favicon.png" type="image/png" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,10 +28,9 @@
   <header class="site-header">
     <div class="shell header-inner">
       <a href="#hero" class="logo">
-        <span class="logo-mark">E</span>
         <span class="logo-text">
-          Dr. Emily Carter
-          <span class="logo-sub">Psychologist • Online Therapy (US)</span>
+          <span class="logo-name">Dr. Emily Carter</span>
+          <span class="logo-sub">Psychologist · Online Therapy</span>
         </span>
       </a>
 
@@ -437,15 +449,14 @@
             </div>
 
             <div class="field">
-  <label for="time">Preferred times (your time zone)</label>
-  <input
-    type="text"
-    id="time"
-    name="time"
-    placeholder="For example: weekday evenings, or Friday mornings"
-  />
-</div>
-
+              <label for="time">Preferred times (your time zone)</label>
+              <input
+                type="text"
+                id="time"
+                name="time"
+                placeholder="For example: weekday evenings, or Friday mornings"
+              />
+            </div>
 
             <button type="submit" class="btn btn-primary btn-full">
               Submit & request an appointment
@@ -496,7 +507,7 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <p class="footer-copy">
-        © <span id="year"></span> Dr. Emily Carter • Online Therapy (Demo)
+        © <span id="year"></span> Dr. Emily Carter · Online Therapy (Demo)
       </p>
       <p class="footer-note">
         The information on this page is for illustrative and educational purposes only
@@ -508,52 +519,52 @@
   </footer>
 
   <script>
-  // Mobile nav toggle
-  const navToggle = document.querySelector('.nav-toggle');
-  const body = document.body;
-  const nav = document.querySelector('.primary-nav');
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const body = document.body;
+    const nav = document.querySelector('.primary-nav');
 
-  if (navToggle) {
-    navToggle.addEventListener('click', (e) => {
-      e.stopPropagation(); // να μην "φύγει" το κλικ προς τα έξω
-      body.classList.toggle('nav-open');
-    });
-  }
+    if (navToggle) {
+      navToggle.addEventListener('click', (e) => {
+        e.stopPropagation(); // να μην "φύγει" το κλικ προς τα έξω
+        body.classList.toggle('nav-open');
+      });
+    }
 
-  // Κλείσιμο όταν κάνεις κλικ σε link μέσα στο menu
-  if (nav) {
-    nav.addEventListener('click', (e) => {
-      const target = e.target;
-      if (target.tagName === 'A') {
+    // Κλείσιμο όταν κάνεις κλικ σε link μέσα στο menu
+    if (nav) {
+      nav.addEventListener('click', (e) => {
+        const target = e.target;
+        if (target.tagName === 'A') {
+          body.classList.remove('nav-open');
+        }
+      });
+    }
+
+    // Κλείσιμο όταν κάνεις κλικ ΟΠΟΥΔΗΠΟΤΕ εκτός nav / hamburger
+    document.addEventListener('click', (e) => {
+      if (!body.classList.contains('nav-open')) return;
+
+      const clickInsideNav = nav && nav.contains(e.target);
+      const clickOnToggle = navToggle && navToggle.contains(e.target);
+
+      if (!clickInsideNav && !clickOnToggle) {
         body.classList.remove('nav-open');
       }
     });
-  }
 
-  // Κλείσιμο όταν κάνεις κλικ ΟΠΟΥΔΗΠΟΤΕ εκτός nav / hamburger
-  document.addEventListener('click', (e) => {
-    if (!body.classList.contains('nav-open')) return;
+    // Κλείσιμο με Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && body.classList.contains('nav-open')) {
+        body.classList.remove('nav-open');
+      }
+    });
 
-    const clickInsideNav = nav && nav.contains(e.target);
-    const clickOnToggle = navToggle && navToggle.contains(e.target);
-
-    if (!clickInsideNav && !clickOnToggle) {
-      body.classList.remove('nav-open');
+    // Current year in footer
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
     }
-  });
-
-  // Κλείσιμο με Escape
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && body.classList.contains('nav-open')) {
-      body.classList.remove('nav-open');
-    }
-  });
-
-  // Current year in footer
-  const yearSpan = document.getElementById('year');
-  if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
-  }
-</script>
+  </script>
 </body>
 </html>
