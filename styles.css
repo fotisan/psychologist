@@ -103,36 +103,35 @@ img {
   height: var(--nav-height);
 }
 
-.logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7rem;
-}
+/* ΝΕΟ premium wordmark logo */
 
-.logo-mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 12px;
-  background: radial-gradient(circle at 20% 15%, #fff 0, #7c5cff 45%, #35c2b3 100%);
-  display: inline-flex;
+.logo {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.1rem;
+  text-decoration: none;
 }
 
 .logo-text {
   display: flex;
   flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-name {
+  font-family: "Lora", serif;
+  font-size: 1.25rem;
+  letter-spacing: -0.5px;
   font-weight: 600;
-  font-size: 0.98rem;
+  color: #26253b;
 }
 
 .logo-sub {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    -sans-serif, "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: 0.75rem;
   color: var(--muted);
+  margin-top: 0.1rem;
 }
 
 /* Mobile nav toggle – default: κινητό */
@@ -281,6 +280,7 @@ body.nav-open .primary-nav {
   font-size: 1.8rem;
   line-height: 1.2;
   margin: 0 0 1rem;
+  font-family: "Lora", serif;
 }
 
 .hero-lead {
