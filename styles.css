@@ -345,8 +345,19 @@ body.nav-open .primary-nav {
 }
 
 .btn-primary {
-  border: none;
+  border: none;                 /* κρίσιμο */
+  background: linear-gradient(
+    135deg,
+    #7c73ff 0%,
+    #35c3c1 100%
+  );
+  color: #fff;
+  border-radius: 999px;
+  padding: 14px 28px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(124, 115, 255, 0.25);
 }
+
 
 
 .btn-primary:hover {
