@@ -345,10 +345,9 @@ body.nav-open .primary-nav {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #7c5cff, #35c2b3);
-  color: #fff;
-  box-shadow: 0 16px 35px rgba(15, 9, 39, 0.25);
+  border: none;
 }
+
 
 .btn-primary:hover {
   transform: translateY(-1px);
